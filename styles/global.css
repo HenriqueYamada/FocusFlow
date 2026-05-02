@@ -12,10 +12,12 @@
 
 :root {
     --primary-color: #4F46E5;
+    --primary-color-darker: #3b35af;
     --secondary-color: #22C55E;
     --background: #0f172a;
     --text-color: #E5E7EB;
     --text-color-muted: #94A3B8;
+    --border: #334155;
 
     --title: 'Poppins', sans-serif;
     --text-font: 'Inter', sans-serif;
