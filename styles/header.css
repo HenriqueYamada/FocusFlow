@@ -2,10 +2,24 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
     background-color: var(--background);
     border-bottom: 2px solid var(--border);
     padding: 8px 20px;
+    height: 80px;
     width: 100vw;
+}
+
+.header-menu, 
+header input {
+    display: none;
+    width: 32px;
+    cursor: pointer;
+    transition: 200ms;
+}
+
+.header-menu:hover {
+    scale: 1.2;
 }
 
 .header-container {
@@ -47,7 +61,7 @@ header ul {
     color: var(--text-color);
 }
 
-header button {
+.header-button {
     background-color: var(--primary-color);
     color: var(--text-color);
     border: 0;
@@ -57,7 +71,11 @@ header button {
     transition: 200ms;
 }
 
-header button:hover {
+.header-button:hover {
     background-color: var(--primary-color-darker);
     transform: translateY(-5px);
+}
+
+#header-button-inside {
+    display: none;
 }
