@@ -3,12 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/global.css">
     <title>FocusFlow</title>
 </head>
 <body>
     <header>
-        
+        <div class="header-container">
+            <h1>Focus<span>Flow</span></h1>
+
+            <label for="checkbox-Icon" class="header-menu">
+                <img src="icons/menu-open.png" alt="Icon of a menu to be opened">
+            </label>
+            <input type="checkbox" id="checkbox-Icon">
+
+            <nav>
+                <ul>
+                    <li class="header-list"><a href="#">Home</a></li>
+                    <li class="header-list"><a href="#">Features</a></li>
+                    <li class="header-list"><a href="#">Pricing</a></li>
+                    <li class="header-list"><a href="#">Contact</a></li>
+                </ul>
+
+                <button class="header-button" id="header-button-inside">Get Started</button>
+            </nav>
+
+            <button class="header-button" id="header-button-outside">Get Started</button>
+        </div>
     </header>
 
     <main>

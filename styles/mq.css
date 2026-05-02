@@ -1,0 +1,42 @@
+@media screen and (max-width: 768px) {
+    header nav,
+    #header-button-outside {
+        display: none
+    }
+
+    #header-button-inside {
+        display: block;
+    }
+
+    .header-menu {
+        display: block;
+    }
+
+    #checkbox-Icon:checked ~ nav {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        background-color: var(--bg-card);
+        position: absolute;
+        bottom: -320px;
+        left: 0;
+        padding: 16px 20px 20px;
+        width: 100%;
+    }
+
+    header ul {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .header-list {
+        border-bottom: 2px solid var(--border);
+        padding: 12px 0;
+        width: 100%;
+    }
+
+    header button {
+        display: block;
+    }
+}
