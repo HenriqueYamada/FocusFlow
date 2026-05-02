@@ -1,7 +1,6 @@
 footer {
     background-color: var(--bg-card2);
     color: var(--text-color-muted);
-    padding-top: 20px;
 }
 
 .footer__container {
@@ -23,10 +22,13 @@ footer {
 .footer__content p {
     margin-top: 12px;
     max-width: 300px;
+    line-height: 1.5em;
 }
 
 .list_links {
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 40px;
     text-align: left;
 }
@@ -52,7 +54,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 40px;
+    height: max-content;
     padding: 40px 20px;
 }
 
