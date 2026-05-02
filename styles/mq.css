@@ -1,0 +1,76 @@
+@media screen and (max-width: 1024px) {
+    .features_grid-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header nav,
+    #header-button-outside {
+        display: none
+    }
+
+    #header-button-inside {
+        display: block;
+    }
+
+    .header-menu {
+        display: block;
+    }
+
+    #checkbox-Icon:checked ~ nav {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        background-color: var(--bg-card);
+        position: absolute;
+        bottom: -320px;
+        left: 0;
+        padding: 16px 20px 20px;
+        width: 100%;
+    }
+
+    header ul {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .header-list {
+        border-bottom: 2px solid var(--border);
+        padding: 12px 0;
+        width: 100%;
+    }
+
+    header button {
+        display: block;
+    }
+
+    /*---Hero---*/
+
+    #hero {
+        flex-direction: column;
+    }
+
+    .hero-content {
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero-content h2 {
+        font-size: 2.1rem;
+        margin: auto;
+    }
+
+    /*---Features---*/
+
+    .features_grid-cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .hero-buttons {
+        flex-direction: column;
+    }
+}
