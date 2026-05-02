@@ -1,6 +1,6 @@
-@media screen and (max-width: 360px) {
-    .hero-buttons {
-        flex-direction: column;
+@media screen and (max-width: 1024px) {
+    .features_grid-cards {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -60,5 +60,17 @@
     .hero-content h2 {
         font-size: 2.1rem;
         margin: auto;
+    }
+
+    /*---Features---*/
+
+    .features_grid-cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .hero-buttons {
+        flex-direction: column;
     }
 }
