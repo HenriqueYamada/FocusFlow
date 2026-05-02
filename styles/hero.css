@@ -19,11 +19,19 @@
     border: 1px solid var(--primary-color);
     border-radius: 50px;
     padding: 8px 20px;
+    max-width: 500px;
     width: max-content;
+}
+
+.hero-tag__content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
 .hero-content h2 {
     font-size: 2.75rem;
+    width: max-content;
 }
 
 .hero-content h2 span {
