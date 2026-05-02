@@ -1,0 +1,241 @@
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 64px;
+    padding: 60px;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    color: var(--text-color);
+}
+
+.hero-tag p {
+    background-color: var(--primary-color-blured);
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 50px;
+    padding: 8px 20px;
+    max-width: 500px;
+    width: max-content;
+}
+
+.hero-tag__content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.hero-content h2 {
+    font-size: 2.75rem;
+    width: max-content;
+}
+
+.hero-content h2 span {
+    color: var(--primary-color);
+}
+
+.hero-content > p {
+    color: var(--text-color-muted);
+    max-width: 400px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 16px;
+}
+
+.hero-buttons button {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border-radius: 10px;
+    font-weight: bold;
+    padding: 20px 28px;
+    width: 150px
+}
+
+#button-start {
+    transition: 200ms;
+}
+
+#button-start:hover {
+    background-color: var(--primary-color-darker);
+    transform: translateY(-5px);
+}
+
+#button-watch {
+    background-color: transparent;
+    border: 2px solid var(--border);
+    transition: 200ms;
+}
+
+#button-watch:hover {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+    transform: translateY(-5px);
+}
+
+/*--Phone customization--*/
+
+.phone-mockup {
+    background-color: var(--bg-card);
+    color: var(--text-color-muted);
+    box-shadow: 0 24px 64px rgba(79, 70, 229, 0.25);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 16px;
+    width: 200px;
+}
+
+.phone-screen {
+    background-color: var(--background);
+    border-radius: 15px;
+    padding: 16px;
+}
+
+.phone-mockup__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.phone-mockup__header h3 {
+    color: var(--text-color);
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.profile-icon {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border-radius: 50%;
+    padding: 4px;
+}
+
+.phone-stats {
+    display: flex;
+    gap: 8px;
+    text-align: center;
+    margin: 20px 0 16px 0;
+    width: 100%;
+}
+
+.phone-stats .phone-stat {
+    background-color: var(--bg-card);
+    border-radius: 10px;
+    padding: 12px 8px;
+}
+
+.phone-stat h4 {
+    color: var(--primary-color);
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.phone-stat p {
+    font-size: 0.65rem;
+    line-height: 1.5em;
+}
+
+.to-do-list {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.to-do-list h3 {
+    font-size: 0.75rem;
+}
+
+.to-do-list__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+}
+
+.to-do-list__tasks {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: var(--bg-card);
+    border-radius: 8px;
+    padding: 8px;
+    width: 100%;
+}
+
+.check-circle-done {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    height: 18px;
+    width: 18px;
+}
+
+.check-circle-undone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--border);
+    border-radius: 50%;
+    height: 18px;
+    width: 18px;
+}
+
+.check-circle-done::after {
+    content: '✓';
+    font-size: 0.6rem;
+    color: #0F172A;
+    font-weight: 700;
+}
+
+.to-do-list__tasks .task {
+    font-size: 0.75rem;
+}
+
+.to-do-list__tasks .task-done {
+    text-decoration: line-through;
+}
+
+.phone-progress {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    background-color: var(--bg-card);
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 8px;
+}
+
+.phone-progress__title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.phone-progress h3, .phone-progress span {
+    font-size: 0.7rem;
+}
+
+.range {
+    position: relative;
+    background-color: var(--border);
+    border-radius: 20px;
+    height: 5px;
+    width: 100%;
+}
+
+.range-progress {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--primary-color);
+    border-radius: 20px;
+    height: 5px;
+    width: 72%;
+}
