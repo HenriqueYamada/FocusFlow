@@ -67,6 +67,20 @@
     .features_grid-cards {
         grid-template-columns: repeat(1, 1fr);
     }
+
+    /*---Footer---*/
+
+    .footer__container {
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 20px;
+    }
 }
 
 @media screen and (max-width: 360px) {
