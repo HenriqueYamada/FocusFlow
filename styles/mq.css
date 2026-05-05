@@ -50,6 +50,7 @@
 
     #hero {
         flex-direction: column;
+        gap: 64px;
     }
 
     .hero-content {
